@@ -1,6 +1,6 @@
 # validateIt
 
-validateIt is a JavaScript validation script.
+`validateIt` is a JavaScript validation script.
 
 <!--
 ![](icon.png)
