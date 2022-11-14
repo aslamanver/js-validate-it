@@ -1,0 +1,26 @@
+{
+    "amount": {
+        "required": {
+            "value": true,
+            "message": "required:message"
+        },
+        "min": {
+            "value": 5,
+            "message": "min:message"
+        },
+        "max": {
+            "value": 16,
+            "message": "max:message"
+        },
+        "sun": {
+            "value": 0,
+            "message": "sun:message"
+        }
+    },
+    "mobile": {
+        "required": {
+            "value": true,
+            "message": "required:message"
+        }
+    }
+}

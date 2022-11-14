@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="validate-it.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+
+            const validations = {
+                amount: {
+                    required: { value: true, message: "required:message" },
+                    min: { value: 5, message: "min:message" },
+                    max: { value: 16, message: "max:message" },
+                    sun: { value: 0, message: "sun:message" },
+                },
+                mobile: {
+                    required: { value: true, message: "required:message" },
+                },
+            };
+
+            const inputs = {
+                amount: 5,
+                mobile: "",
+            };
+
+            console.log(validateIt(validations, inputs));
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

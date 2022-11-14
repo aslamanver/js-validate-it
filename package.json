@@ -1,0 +1,42 @@
+{
+    "name": "validate-it",
+    "description": "Simple validation Library",
+    "version": "1.0.0",
+    "author": "Aslam Anver <aslamanver@outlook.com>",
+    "license": "MIT",
+    "repository": "aslamanver/validate-it",
+    "homepage": "https://github.com/aslamanver/validate-it",
+    "keywords": [
+        "validate it",
+        "simple validation",
+        "validator"
+    ],
+    "main": "src/validate-it.js",
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "start": "npm run lint && nodemon src/index.js",
+        "test": "mocha --timeout 36000 tests/tests.js",
+        "test:watch": "npm run test -- --watch",
+        "build": "grunt webpack"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.0",
+        "@babel/preset-env": "^7.4.2",
+        "@typescript-eslint/eslint-plugin": "^5.42.1",
+        "babel-loader": "^8.0.5",
+        "eslint": "^8.9.0",
+        "eslint-config-google": "^0.14.0",
+        "grunt": "^1.5.3",
+        "grunt-contrib-concat": "^2.1.0",
+        "grunt-contrib-uglify": "^5.2.2",
+        "grunt-webpack": "^5.0.0",
+        "mocha": "^7.0.1",
+        "nodemon": "^2.0.20",
+        "path": "^0.12.7",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.3.0"
+    }
+}
