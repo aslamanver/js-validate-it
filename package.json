@@ -1,17 +1,17 @@
 {
-    "name": "validate-it",
+    "name": "js-validate-it",
     "description": "Simple validation Library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Aslam Anver <aslamanver@outlook.com>",
     "license": "MIT",
-    "repository": "aslamanver/validate-it",
-    "homepage": "https://github.com/aslamanver/validate-it",
+    "repository": "aslamanver/js-validate-it",
+    "homepage": "https://github.com/aslamanver/js-validate-it",
     "keywords": [
         "validate it",
         "simple validation",
         "validator"
     ],
-    "main": "src/validate-it.js",
+    "main": "src/index.js",
     "engines": {
         "node": ">= 0.10.0"
     },
@@ -20,7 +20,8 @@
         "start": "npm run lint && nodemon src/index.js",
         "test": "mocha --timeout 36000 tests/tests.js",
         "test:watch": "npm run test -- --watch",
-        "build": "grunt webpack"
+        "build": "grunt webpack",
+        "release": "npm run build && npm publish --access public"
     },
     "devDependencies": {
         "@babel/core": "^7.4.0",
