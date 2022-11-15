@@ -2,22 +2,34 @@
     "amount": {
         "required": {
             "value": true,
-            "message": "required:message"
+            "message": "amount:required:message"
         },
         "min": {
             "value": 5,
-            "message": "min:message"
+            "message": "amount:min:message"
         },
         "max": {
             "value": 16,
-            "message": "max:message"
+            "message": "amount:max:message"
         },
         "sun": {
             "value": 0,
-            "message": "sun:message"
+            "message": "amount:sun:message"
         }
     },
     "mobile": {
+        "required": {
+            "value": true,
+            "message": "mobile:required:message"
+        }
+    },
+    "payment_type": {
+        "required": {
+            "value": true,
+            "message": "payment_type:required:message"
+        }
+    },
+    "is_retry": {
         "required": {
             "value": true,
             "message": "required:message"

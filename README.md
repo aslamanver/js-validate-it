@@ -16,6 +16,22 @@
 
 ## Usage
 
+```js
+const validations = {
+    amount: {
+    min: { value: 5, message: "min:message" },
+    max: { value: 16, message: "max:message" },
+    sun: { value: 0, message: "sun:message" },
+    },
+};
+
+const inputs = {
+    amount: 4,
+};
+
+const result = validateIt(validations, inputs);
+```
+
 [npm-image]: https://img.shields.io/npm/v/js-validate-it.svg
 [npm-url]: https://npmjs.org/package/js-validate-it
 [downloads-image]: https://img.shields.io/npm/dm/js-validate-it.svg
